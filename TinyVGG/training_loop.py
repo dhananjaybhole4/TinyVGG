@@ -102,6 +102,6 @@ def train(epochs: int,
         train_acc_count.append(train_acc)
         test_loss_count.append(test_loss.item())
         test_acc_count.append(test_acc)
-        #print(f"Epoch : {epoch} | Train Loss : {train_loss:.4f} | Train Accuracy : {train_acc:.2f} | Test Loss : {test_loss:.4f} | Test Accuracy : {test_acc:.2f}")
+        print(f"Epoch : {epoch} | Train Loss : {train_loss:.4f} | Train Accuracy : {train_acc:.2f} | Test Loss : {test_loss:.4f} | Test Accuracy : {test_acc:.2f}")
     return epoch_count, train_loss_count, train_acc_count, test_loss_count, test_acc_count
 
