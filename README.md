@@ -6,7 +6,7 @@
 
 Following image represent the structure of neural network model. The only difference is, there are there classes or there output terms in the model built in this repository
 
-![TinyVGG](images/a.png)
+![TinyVGG](./images/a.png)
 
 ## Installation instruction for users
 
