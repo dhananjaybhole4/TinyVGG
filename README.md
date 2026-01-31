@@ -1,19 +1,41 @@
-# TinyVGG
+# TinyVGG Image Classification – From Scratch
 
- This repository contains a neural network model inspired by TinyVGG. It include full data preparation containing three classes ['chicken_curry','chocolate_cake','ice_cream'] , model building, training and evaluation forming a complete machine learning pipeline
+This repository contains a neural network model inspired by TinyVGG. It include full data preparation containing three classes ['chicken_curry','chocolate_cake','ice_cream'] , model building, training and evaluation forming a complete machine learning pipeline
 
- ### Image
+## Image
 
 Following image represent the structure of neural network model. The only difference is, there are three classes or output terms in the model built in the repository
 
 ![TinyVGG](./images/a.png)
 
+## Repository Structure
+
+```text
+.
+├── images/                 # Sample or input images
+├── TinyVGG/
+│   ├── dataset_preprocessing.py  # Dataset loading & transformations
+│   ├── model.py                 # TinyVGG CNN architecture
+│   ├── training_loop.py         # Training & validation logic
+├── dataset/                 # Original dataset files
+├── pretrained_model/        # Saved weights
+├── sample/                  # Sample predictions / outputs
+├── utils/                   # Helper functions (visualization, metrics)
+├── predictions.py           # Inference / prediction script
+├── train.py                 # Main training script
+└── requirements.txt         # Project dependencies
+```
+
 ## Installation instruction for users
 
 - Clone the repository
-    `git clone https://github.com/Dhananjay-AD/TinyVGG.git`
+```bash
+git clone https://github.com/dhananjaybhole4/TinyVGG.git
+```
 - check for requirements
-    `pip install -r requirements.txt`
+```bash
+pip install -r requirements.txt
+```
 - place the custom dataset in the following way
     - TinyVGG/dataset/custom dataset/
     - training dataset/
@@ -28,7 +50,12 @@ Following image represent the structure of neural network model. The only differ
 Replace `class1`, `class2`, `class3` with your own class names
 
 ## Training the neural network
-Run `train.py` with arguments 
+
+**Run** 
+```bash
+train.py
+```
+with arguments 
 - `--name` - set the name of the model
 - `--use_pretrained_model` - train with the efficient_net model with complex structure and pre_trained weight
 - `--lr` - set learning rate
